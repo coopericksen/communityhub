@@ -15,7 +15,47 @@
         <a href="/events" class="nav-link">Events</a>
     </nav>
 
-    <h1 id="banner">Request new Resource</h1>
+    <h1 id="banner">Request New Resource</h1>
+
+    <form id="form-resource" action="/api/request-new-resource">
+
+        <label for="form-resource-name">Resource Name:</label>
+        <input id="form-resource-name" type="text" placeholder="HubertHelps">
+
+        <label for="form-resource-services">Services Provided:</label>
+        <textarea name="form-resource-services" id="form-resource-services" rows="3" cols="10" placeholder="Counseling, shelter, food..."></textarea>
+
+        <hr style="grid-column: span 2;">
+
+        <label for="form-resource-address">Address:</label>
+        <input id="form-resource-address" type="text" placeholder="123 Main Street">
+
+        <label for="form-resource-address">Hours:</label>
+        <input id="form-resource-address" type="text" placeholder="Weekdays: 8am-5pm, Closed on weekends">
+
+        <hr style="grid-column: span 2;">
+
+        <label for="form-resource-contact">Contact Name:</label>
+        <input id="form-resource-contact" type="text" placeholder="Hubert Manly">
+
+        <label for="form-resource-contact-title">Contact Title:</label>
+        <input id="form-resource-contact-title" type="text" placeholder="Founder of HubertHelps">
+
+        <label for="form-resource-phone-number">Contact Phone Number:</label>
+        <input id="form-resource-phone-number" type="text" placeholder="(012) 345-6789">
+
+        <label for="form-resource-email">Email:</label>
+        <input id="form-resource-email" type="text" placeholder="manlyhubert@gmail.com">
+
+        <label for="form-resource-email">Website:</label>
+        <input id="form-resource-email" type="text" placeholder="www.huberthelps.com">
+
+        <label for="form-resource-help-phone-number">Help Phone Number:</label>
+        <input id="form-resource-help-phone-number" type="text" placeholder="(123) 456-7890">
+
+        <hr style="grid-column: span 2;">
+        <input id="form-submit" type="submit" value="Submit">
+    </form>
 
 </body>
 </html>

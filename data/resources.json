@@ -7,6 +7,7 @@
         "phone_number": "(509) 447-9997",
         "help_phone_number": "(509) 447-5483",
         "email": "info@ruralresources.org",
+        "website": "",
         "address": "",
         "hours": ""
     },
@@ -19,6 +20,7 @@
         "phone_number": "(509) 447-2274",
         "help_phone_number": "(509) 447-5483",
         "email": "",
+        "website": "",
         "address": "730 W. 1st St.",
         "hours": ""
     },
@@ -31,6 +33,7 @@
         "phone_number": "(509) 447-4348",
         "help_phone_number": "",
         "email": "",
+        "website": "",
         "address": "310 W Pine St.",
         "hours": "Tuesday: 10am-2pm"
     },
@@ -43,6 +46,7 @@
         "phone_number": "(509) 447-1125",
         "help_phone_number": "(509) 671-7293",
         "email": "yesteensmatter2us@gmail.com",
+        "website": "",
         "address": "229 N. Calispel Ave.",
         "hours": ""
     },
@@ -55,6 +59,7 @@
         "phone_number": "1-800-776-9026",
         "help_phone_number": "",
         "email": "",
+        "website": "",
         "address": "",
         "hours": ""
     }

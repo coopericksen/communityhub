@@ -42,6 +42,12 @@ async function loadElements() {
 
             const services = createSubEl(element, "p", resource.services, false);
 
+            if (resource.website != "") {
+                const website = createSubEl(element, "a", "Website", true, ["resource-website"]);
+                website.href = resource.website;
+                website.target = "_blank";
+            }
+
             if (resource.address != "" || resource.hours != "") {
                 const details = createSubEl(element, "div", "", true, ["resource-details"]);
                 const address = createSubEl(details, "p", resource.address, false);

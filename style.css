@@ -1,9 +1,15 @@
 :root {
     --contrast: #271f30;
-    --accent: #c0d6df;
+    /* --accent: #c0d6df; */
+    --accent: #dddbcb;
     --text: #dbe9ee;
-    --primary: #4a6fa5;
-    --secondary: #166088;
+    --main-blue: #4a6fa5;
+    --secondary-blue: #166088;
+    /* --green: #00a676; */
+    --green: #139A43;
+    --yellow: #fac748;
+    --pink: #f04b6b;
+
 }
 
 * {
@@ -12,7 +18,7 @@
 }
 
 body {
-    background-color: var(--primary);
+    background-color: var(--main-blue);
     color: var(--text);
     font-family: sans-serif;
 }
@@ -20,7 +26,7 @@ body {
 #nav {
     display: flex;
     justify-content: center;
-    background-color: var(--secondary);
+    background-color: var(--secondary-blue);
     height: 50px;
 }
 
@@ -32,7 +38,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: var(--contrast);
+    background-color: var(--green);
     text-decoration: underline;
 }
 
@@ -88,15 +94,22 @@ body {
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
+    background-color: var(--pink);
 }
 
 .resource {
-    background-color: var(--secondary);
-    border: 1px solid var(--accent);
+    background-color: var(--secondary-blue);
+    border: 1px solid var(--green);
+    color: var(--text);
     
     border-radius: 2rem;
     padding: 1rem;
     margin: 0.2rem;
+    transition: background-color 0.2s ease;
+}
+
+.resource:hover {
+    background-color: var(--green);
 }
 
 .resource > * {
@@ -105,6 +118,11 @@ body {
 
 .resource-name {
     margin-bottom: 1rem;
+}
+
+.resource-website {
+    color: var(--yellow);
+    margin: 1rem 0;
 }
 
 .resource-details {

@@ -4,7 +4,7 @@
     --accent: #dddbcb;
     --text: #dbe9ee;
     --main-blue: #4a6fa5;
-    --secondary-blue: #166088;
+    --secondary-blue: #044876;
     /* --green: #00a676; */
     --green: #139A43;
     --yellow: #fac748;
@@ -151,7 +151,7 @@ body {
 }
 
 #request-new-resource a {
-    color: var(--contrast);
+    color: var(--yellow);
 }
 
 #form-resource {

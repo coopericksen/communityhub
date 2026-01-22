@@ -1,8 +1,8 @@
 const resource_container = document.getElementById("resource-container");
 
-async function fetchData() {
+async function fetchData(data) {
     try {
-        const jsonData = await fetch("./data/resources.json");
+        const jsonData = await fetch(`./data/${data}.json`);
         const parsedData = await jsonData.json();
         return parsedData;
     } catch (error) {
@@ -29,27 +29,48 @@ function createSubEl(parent_element, type, param="", param_allow_empty=true, cla
 }
 
 async function loadElements() {
-    const data = await fetchData();
+    let page = resource_container.attributes.page.value;
+
+    const data = await fetchData(page);
 
     data.forEach(resource => {
-        const element = createSubEl(resource_container, "div", "", true, ["resource"]);
-        const name = createSubEl(element, "h1", resource.name);
 
-        const services = createSubEl(element, "p", resource.services, false);
+        if (page === "resources" || page === "spotlight") {
 
-        if (resource.address != "" || resource.hours != "") {
-            const details = createSubEl(element, "div", "", true, ["resource-details"]);
-            const address = createSubEl(details, "p", resource.address, false);
-            const hours = createSubEl(details, "p", resource.hours, false);
+            const element = createSubEl(resource_container, "div", "", true, ["resource"]);
+            const name = createSubEl(element, "h1", resource.name);
+
+            const services = createSubEl(element, "p", resource.services, false);
+
+            if (resource.address != "" || resource.hours != "") {
+                const details = createSubEl(element, "div", "", true, ["resource-details"]);
+                const address = createSubEl(details, "p", resource.address, false);
+                const hours = createSubEl(details, "p", resource.hours, false);
+            }
+
+            const reach_out = createSubEl(element, "div", "", true, ["resource-reach-out"]);
+            const contact = createSubEl(reach_out, "p", resource.contact, false);
+            const contact_title = createSubEl(reach_out, "p", resource.contact_title, false);
+            const phone_number = createSubEl(reach_out, "p", resource.phone_number, false);
+            const help_phone_number = createSubEl(reach_out, "p", resource.help_phone_number, false);
+            const email = createSubEl(reach_out, "p", resource.email, false);
+
+        } else if (page === "events") {
+
+            const element = createSubEl(resource_container, "div", "", true, ["resource"]);
+            const name = createSubEl(element, "h1", resource.name);
+
+            const description = createSubEl(element, "p", resource.description, false);
+
+            if (resource.address != "" || resource.time != "") {
+                const details = createSubEl(element, "div", "", true, ["resource-details"]);
+                const address = createSubEl(details, "p", resource.address, false);
+                const time = createSubEl(details, "p", resource.time, false);
+            }
+
+            const entry_cost = createSubEl(element, "p", `Entry Cost: ${resource.entry_cost}`, false);
+
         }
-
-        const reach_out = createSubEl(element, "div", "", true, ["resource-reach-out"]);
-        const contact = createSubEl(reach_out, "p", resource.contact, false);
-        const contact_title = createSubEl(reach_out, "p", resource.contact_title, false);
-        const phone_number = createSubEl(reach_out, "p", resource.phone_number, false);
-        const help_phone_number = createSubEl(reach_out, "p", resource.help_phone_number, false);
-        const email = createSubEl(reach_out, "p", resource.email, false);
-
     });
 }
 

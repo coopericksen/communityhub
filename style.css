@@ -49,8 +49,36 @@ body {
     text-align: center;
     border: 2px solid var(--accent);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 4rem;
     margin: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#banner-resources, #banner-events {
+    text-align: center;
+    border: 2px solid var(--accent);
+    border-radius: 1rem;
+    padding: 6rem;
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#banner-resources {
+    background-image: url(./images/owens.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    text-shadow: 5px 5px 10px #000;
+}
+
+#banner-events {
+    background: url(./images/movietheater.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+    text-shadow: 5px 5px 10px #000;
 }
 
 #resource-container {
@@ -85,6 +113,7 @@ body {
     border: 1px solid var(--accent);
     text-decoration: underline;
     padding: 0.2rem;
+    gap: 1rem;
 }
 
 .resource-reach-out {
@@ -142,4 +171,28 @@ body {
     margin-inline: auto;
     grid-column: span 2;
     cursor: pointer;
+}
+
+#references {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    background-color: var(--contrast);
+    padding: 1rem;
+    row-gap: 1rem;
+    border-radius: 1rem;
+}
+
+#references > * {
+    color: var(--text);
+    text-shadow: 2px 2px 5px var(--contrast);
+    font-size: 20px;
+    text-align: center;
+}
+
+#credit {
+    color: var(--text);
+    text-shadow: 2px 2px 5px var(--contrast);
+    font-size: 16px;
+    text-align: center;
+    margin: 2rem;
 }

@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Farmer's Market",
+        "description": "A weekend venture where local farmers and community members come together to showcase an exoctic collection of country food and trinkets.",
+        "time": "Weekends during fall-season",
+        "address": "236 S Union Ave",
+        "entry_cost": "Free"
+    },
+
+    {
+        "name": "Wolf Trails",
+        "description": "Scenic biking trails on the outskirts of town.",
+        "time": "Anytime",
+        "address": "205 Laurelhurst Dr, Newport, WA 99156",
+        "entry_cost": "Free"
+    },
+
+    {
+        "name": "Indian Creek Community Forest",
+        "description": "Beautiful forest with a small creek. Open to the public.",
+        "time": "Anytime",
+        "address": "2050 Indian Creek Rd., Newport, WA 99156",
+        "entry_cost": "Free"
+    },
+
+    {
+        "name": "Albani Cove Public Boat Launch",
+        "description": "Launch your craft from the Albani Cove boat launch to explore the Pend Orielle River.",
+        "time": "Anytime",
+        "address": "2141 Albeni Cove Rd, Oldtown, ID, 83822",
+        "entry_cost": "Free"
+    },
+
+    {
+        "name": "Oldtown Rotary Park Visitors Center",
+        "description": "Visitors center for the Rotary Park in Oldtown, Idaho.",
+        "time": "Monday-Friday: 8am-4pm, Saturday: 7am-5pm, Sunday: Closed",
+        "address": "Off Old Diamond MI Loop, Oldtown, Idaho, 83822",
+        "entry_cost": "Free"
+    }
+]

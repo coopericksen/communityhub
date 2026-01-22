@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Newport Food Bank",
+        "services": "",
+        "contact": "",
+        "contact_title": "",
+        "phone_number": "(509) 447-4348",
+        "help_phone_number": "",
+        "email": "",
+        "website": "",
+        "address": "310 W Pine St.",
+        "hours": "Tuesday: 10am-2pm"
+    },
+
+    {
+        "name": "Y.E.S. Youth Emergency Services",
+        "services": "",
+        "contact": "",
+        "contact_title": "",
+        "phone_number": "(509) 447-1125",
+        "help_phone_number": "(509) 671-7293",
+        "email": "yesteensmatter2us@gmail.com",
+        "website": "",
+        "address": "229 N. Calispel Ave.",
+        "hours": ""
+    },
+
+    {
+        "name": "Rural Resources",
+        "services": "Food-vouchers, temporary housing, and more.",
+        "contact": "",
+        "contact_title": "",
+        "phone_number": "(509) 447-9997",
+        "help_phone_number": "(509) 447-5483",
+        "email": "info@ruralresources.org",
+        "website": "",
+        "address": "",
+        "hours": ""
+    }
+]

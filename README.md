@@ -1,2 +1,1 @@
-# communityhub
-2026 TSA Webmaster submission.
+This project is for the 2026 Technology Student Association (TSA) Webmaster competitive event. Team 23027-1 from Newport High School.

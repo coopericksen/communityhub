@@ -1,9 +1,11 @@
 import Nav from '../components/Nav.tsx';
+import Banner from '../components/Banner.tsx';
 
-function ResourcesPage () {
+function ResourcesPage() {
     return (
         <>
             <Nav />
+            <Banner />
             <h1>Resources</h1>
         </>
     )

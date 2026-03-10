@@ -1,6 +1,6 @@
 import './Nav.css';
 
-function Nav () {
+function Nav() {
     return (
         <>
             <nav>

@@ -5,8 +5,9 @@ function AboutPage() {
     return (
         <>
             <Nav />
-            <Banner />
+            <Banner page='About'/>
             <h1>About</h1>
+            <a href="https://github.com/coopericksen/communityhub" target='_blank'>Github Repo</a>
         </>
     )
 }

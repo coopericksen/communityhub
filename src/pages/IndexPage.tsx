@@ -6,7 +6,7 @@ function IndexPage() {
     return (
         <>
             <Nav />
-            <Banner />
+            <Banner page='Spotlight'/>
             <h1>Index</h1>
             <ElementSizes />
         </>

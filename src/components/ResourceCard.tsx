@@ -1,4 +1,4 @@
-import './ResourceCard.css';
+import '../styles/ResourceCard.css';
 import { type Resource } from '../types/types.ts';
 
 function ResourceCard(props: Resource) {

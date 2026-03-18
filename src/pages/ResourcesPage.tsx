@@ -1,6 +1,7 @@
 import Nav from '../components/Nav.tsx';
 import Banner from '../components/Banner.tsx';
 import ResourceCard from '../components/ResourceCard.tsx';
+import Footer from '../components/Footer.tsx';
 
 import resourcesData from '../data/resources.ts';
 
@@ -22,7 +23,9 @@ function ResourcesPage() {
                 {resourcesElements}
             </div>
 
-            <p className="form-link">Not seeing a resource? Request it <a href="/resources/form">here.</a></p>
+            <p className="form-link">Not seeing a resource? Request it <a href="/resources/form">here</a>.</p>
+
+            <Footer />
             
         </>
     );

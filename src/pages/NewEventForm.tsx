@@ -1,19 +1,17 @@
 import Nav from '../components/Nav.tsx';
-import Banner from '../components/Banner.tsx';
+import Footer from '../components/Footer.tsx';
 
 import '../styles/requestForm.css';
 
 function NewEventForm() {
     function addNewEvent(formData: FormData) {
-        const name = formData.get("name");
-        console.log(name);
+        console.log(Object.fromEntries(formData));
         alert("Submitted!")
     }
 
     return (
         <>
             <Nav />
-            {/* <Banner page='Hub' /> */}
 
             <form className="form" action={addNewEvent}>
 
@@ -36,6 +34,8 @@ function NewEventForm() {
 
                 <button>Submit</button>
             </form>
+
+            <Footer />
         </>
     )
 }

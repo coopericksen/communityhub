@@ -1,19 +1,17 @@
 import Nav from '../components/Nav.tsx';
-import Banner from '../components/Banner.tsx';
+import Footer from '../components/Footer.tsx';
 
 import '../styles/requestForm.css';
 
 function NewResourceForm() {
     function addNewResource(formData: FormData) {
-        const name = formData.get("name");
-        console.log(name);
-        alert("Submitted!")
+        console.log(Object.fromEntries(formData));
+        alert("Submitted!");
     }
 
     return (
         <>
             <Nav />
-            {/* <Banner page='Hub' /> */}
 
             <form className="form" action={addNewResource}>
 
@@ -45,6 +43,8 @@ function NewResourceForm() {
 
                 <button>Submit</button>
             </form>
+
+            <Footer />
         </>
     )
 }

@@ -10,9 +10,9 @@
 }
 
 .form input, .form textarea {
-    background-color: var(--main);
+    background-color: var(--secondary);
     color: var(--white);
-    border: 2px solid var(--secondary);
+    border: 2px solid var(--white);
     border-radius: 1rem;
     padding: 1rem;
 }

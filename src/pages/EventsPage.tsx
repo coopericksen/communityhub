@@ -1,6 +1,7 @@
 import Nav from '../components/Nav.tsx';
 import Banner from '../components/Banner.tsx';
 import EventCard from '../components/EventCard.tsx';
+import Footer from '../components/Footer.tsx';
 
 import eventsData from '../data/events.ts';
 
@@ -22,7 +23,9 @@ function EventsPage() {
                 {eventsElements}
             </div>
 
-            <p className="form-link">Not seeing an event? Request it <a href="/events/form">here.</a></p>
+            <p className="form-link">Not seeing an event? Request it <a href="/events/form">here</a>.</p>
+
+            <Footer />
         </>
     )
 }

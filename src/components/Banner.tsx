@@ -1,4 +1,4 @@
-import './Banner.css';
+import '../styles/Banner.css';
 
 interface BannerProps {
     page: string;
@@ -6,12 +6,10 @@ interface BannerProps {
 
 function Banner(props: BannerProps) {
     return (
-        <>
-            <div id='banner-container'>
-                <h1 id='banner-headline'>Community {props.page}</h1>
-                <h5 id='banner-subheadline'>Newport, Washington</h5>
-            </div>
-        </>
+        <div id='banner-container'>
+            <h1 id='banner-headline'>Community {props.page}</h1>
+            <h5 id='banner-subheadline'>Newport, Washington</h5>
+        </div>
     )
 }
 

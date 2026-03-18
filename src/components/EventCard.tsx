@@ -1,4 +1,4 @@
-import './EventCard.css';
+import '../styles/EventCard.css';
 import { type Event } from '../types/types.ts';
 
 function EventCard(props: Event) {

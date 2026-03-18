@@ -54,3 +54,12 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     margin-inline: 5rem;
 }
+
+.form-link {
+    text-align: center;
+    margin: 1rem;
+}
+
+.form-link a {
+    color: var(--accent);
+}

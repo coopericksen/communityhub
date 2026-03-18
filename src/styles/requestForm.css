@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.form input, .form textarea {
+    background-color: var(--main);
+    color: var(--white);
+    border: 2px solid var(--secondary);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.form button {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border: 2px solid var(--white);
+    cursor: pointer;
+}

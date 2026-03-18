@@ -21,6 +21,9 @@ function ResourcesPage() {
             <div className='card-grid'>
                 {resourcesElements}
             </div>
+
+            <p className="form-link">Not seeing a resource? Request it <a href="/resources/form">here.</a></p>
+            
         </>
     );
 }

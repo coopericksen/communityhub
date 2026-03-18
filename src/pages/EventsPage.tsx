@@ -21,6 +21,8 @@ function EventsPage() {
             <div className='card-grid'>
                 {eventsElements}
             </div>
+
+            <p className="form-link">Not seeing an event? Request it <a href="/events/form">here.</a></p>
         </>
     )
 }

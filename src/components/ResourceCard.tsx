@@ -1,13 +1,28 @@
+import { motion } from 'motion/react';
+
 import '../styles/ResourceCard.css';
 import { type Resource } from '../types/types.ts';
+import { hr } from 'motion/react-client';
 
 function ResourceCard(props: Resource) {
 
     return (
-        <div className="card-container">
+        <motion.div 
+            initial={{ opacity: 0, y: 50 }} 
+            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.5 } }} 
+            viewport={{ once: false, amount: 0.1 }} 
+
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+
+            className="card-container"
+        >
 
             <h3>{props.name}</h3>
+
             <p>{props.services}</p>
+
+            <hr />
 
             {(props.contact.phone != "" || props.contact.help_phone != "" || props.contact.email != "" || props.contact.website != "") ? <h6 className='card-contact-header'>Contact Information</h6> : null}
             <div className="card-contact">
@@ -23,7 +38,7 @@ function ResourceCard(props: Resource) {
                 {props.hours != "" ? <p>Hours: {props.hours}</p> : null}
             </div>
 
-        </div>
+        </motion.div>
     );
 }
 

@@ -11,7 +11,7 @@ a {
 
 .card-contact-header, .card-opinfo-header {
     text-decoration: underline;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .card-contact {

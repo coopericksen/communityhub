@@ -1,12 +1,24 @@
+import { motion } from 'motion/react';
+
 import '../styles/EventCard.css';
 import { type Event } from '../types/types.ts';
 
 function EventCard(props: Event) {
 
     return (
-        <div className="card-container">
+        <motion.div
+            initial={{ opacity: 0, y: 50 }} 
+            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.5 } }} 
+            viewport={{ once: false, amount: .2 }} 
+
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+
+            className="card-container"
+        >
 
             <h3>{props.name}</h3>
+
             <p>{props.description}</p>
 
             <hr />
@@ -18,7 +30,7 @@ function EventCard(props: Event) {
                 {props.entry_cost != "" ? <p>Entry Cost: {props.entry_cost}</p> : null}
             </div>
 
-        </div>
+        </motion.div>
     );
 }
 

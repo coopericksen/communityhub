@@ -5,6 +5,10 @@
     margin: 1rem;
 }
 
+.card-container:hover {
+    border: 2px solid var(--white);
+}
+
 hr {
     margin: 1rem 0;
 }

@@ -1,8 +1,8 @@
-import { JSX, ReactNode } from "react"
-import { Url } from "url"
+import { ReactNode } from "react"
 
 export interface Resource {
     id: number
+    index: number
     name: string
     services: string
     contact: {
@@ -17,6 +17,7 @@ export interface Resource {
 
 export interface Event {
     id: number
+    index: number
     name: string
     description: string
     time: string

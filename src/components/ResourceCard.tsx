@@ -7,8 +7,8 @@ function ResourceCard(props: Resource) {
 
     return (
         <motion.div 
-            initial={{ opacity: 0, y: 50 }} 
-            whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.5 } }} 
+            initial={{ opacity: 0, y: 50, x: props.index % 2 == 0 ? 50 : -50 }} 
+            whileInView={{ opacity: 1, y: 0, x: 0, transition: { delay: 0.2, duration: 0.5 } }} 
             viewport={{ once: false, amount: 0.1 }} 
 
             whileHover={{ scale: 1.05 }}

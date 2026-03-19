@@ -23,6 +23,7 @@ function EventsPage() {
         return (
             <EventCard 
                 key={event.id}
+                index={event.id}
                 {...event}
             />
         );

@@ -12,8 +12,8 @@ function TechCard(props: Tech) {
             className="tech-card" 
             style={{ borderWidth: "2px", borderStyle: "solid", borderColor: props.accent_color }}
 
-            initial={{ opacity: 0, y: 50 }} 
-            whileInView={{ opacity: 1, y: 0, transition: { delay: props.delay, duration: 0.5 } }} 
+            initial={{ opacity: 0, y: 50, x: 50}} 
+            whileInView={{ opacity: 1, y: 0, x: 0, transition: { delay: props.delay, duration: 0.5 } }} 
             viewport={{ once: false, amount: 0.1 }} 
 
             whileHover={{ scale: 1.1 }}

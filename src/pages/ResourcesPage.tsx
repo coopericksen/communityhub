@@ -23,6 +23,7 @@ function ResourcesPage() {
         return (
             <ResourceCard 
                 key={resource.id}
+                index={resource.id}
                 {...resource}
             />
         );

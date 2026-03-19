@@ -18,12 +18,15 @@ function IndexPage() {
             <h2 className='featured-header'>Featured Resources & Events</h2>
             <div className="card-grid-index">
                 <ResourceCard
+                    index={9}
                     {...resourcesData[9]}
                 />
                 <EventCard
+                    index={11}
                     {...eventsData[11]}
                 />
                 <ResourceCard
+                    index={3}
                     {...resourcesData[3]}
                 />
             </div>

@@ -9,18 +9,18 @@ function ResourceCard(props: Resource) {
             <h3>{props.name}</h3>
             <p>{props.services}</p>
 
-            <h6 className='card-contact-header'>Contact Information</h6>
+            {(props.contact.phone != "" || props.contact.help_phone != "" || props.contact.email != "" || props.contact.website != "") && <h6 className='card-contact-header'>Contact Information</h6>}
             <div className="card-contact">
-                <p>Phone: {props.contact.phone}</p>
-                <p>Help Phone: {props.contact.help_phone}</p>
-                <p>Email: {props.contact.email}</p>
-                <a href={props.contact.website}>Website</a>
+                {props.contact.phone != "" && <p>Phone: {props.contact.phone}</p>}
+                {props.contact.help_phone != "" && <p>Help Phone: {props.contact.help_phone}</p>}
+                {props.contact.email != "" && <p>Email: {props.contact.email}</p>}
+                {props.contact.website != "" && <a href={props.contact.website} target='_blank'>Website</a>}
             </div>
 
-            <h6 className='card-opinfo-header'>Operation Info</h6>
+            {(props.address != "" || props.hours != "") && <h6 className='card-opinfo-header'>Operation Info</h6>}
             <div className="card-opinfo">
-                <p>Address: {props.address}</p>
-                <p>Hours: {props.hours}</p>
+                {props.address != "" && <p>Address: {props.address}</p>}
+                {props.hours != "" && <p>Hours: {props.hours}</p>}
             </div>
 
         </div>

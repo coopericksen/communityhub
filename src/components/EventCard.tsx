@@ -13,9 +13,9 @@ function EventCard(props: Event) {
 
             <h6 className='card-info-header'>Event Information</h6>
             <div className='card-info'>
-                <p>Address: {props.address}</p>
-                <p>Time: {props.time}</p>
-                <p>Entry Cost: {props.entry_cost}</p>
+                {props.address != "" && <p>Location: {props.address}</p>}
+                {props.time != "" && <p>Time: {props.time}</p>}
+                {props.entry_cost != "" && <p>Entry Cost: {props.entry_cost}</p>}
             </div>
 
         </div>

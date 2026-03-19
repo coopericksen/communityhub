@@ -1,3 +1,6 @@
+import { JSX, ReactNode } from "react"
+import { Url } from "url"
+
 export interface Resource {
     id: number
     name: string
@@ -19,4 +22,12 @@ export interface Event {
     time: string
     address: string
     entry_cost: string
+}
+
+export interface Tech {
+    tech_name: string
+    link: string
+    accent_color: string
+    svg: ReactNode
+    delay: number
 }

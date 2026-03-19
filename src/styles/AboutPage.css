@@ -34,4 +34,5 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin: 3rem;
 }

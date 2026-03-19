@@ -19,11 +19,11 @@ function IndexPage() {
             <div className="card-grid-index">
                 <ResourceCard
                     index={9}
-                    {...resourcesData[9]}
+                    {...resourcesData[0]}
                 />
                 <EventCard
                     index={11}
-                    {...eventsData[11]}
+                    {...eventsData[2]}
                 />
                 <ResourceCard
                     index={3}

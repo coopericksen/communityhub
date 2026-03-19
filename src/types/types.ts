@@ -5,6 +5,7 @@ export interface Resource {
     index: number
     name: string
     services: string
+    image: string
     contact: {
         phone: string
         help_phone: string
@@ -20,6 +21,7 @@ export interface Event {
     index: number
     name: string
     description: string
+    image: string
     time: string
     address: string
     entry_cost: string

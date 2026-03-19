@@ -55,6 +55,17 @@ p {
     margin-inline: 5rem;
 }
 
+.card-grid-index {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-inline: 5rem;
+}
+
+.featured-header {
+    text-align: center;
+    padding: 3rem;
+}
+
 .form-link {
     text-align: center;
     margin: 1rem;

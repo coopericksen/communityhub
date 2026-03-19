@@ -3,17 +3,22 @@
     text-align: center;
 }
 
-.about-repo-link {
+.about-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-link {
     background-color: var(--accent);
     border-radius: 1rem;
     padding: 1rem;
-    margin: 3rem auto;
+    margin: 3rem 1rem;
     display: block;
     width: max-content;
     text-decoration: none;
 }
 
-.about-repo-link:hover {
+.about-link:hover {
     text-decoration: underline;
     border: 2px solid var(--white);
 }

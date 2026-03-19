@@ -13,7 +13,11 @@ function AboutPage() {
             <Nav />
             <Banner page='About'/>
 
-            <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} href="https://github.com/coopericksen/communityhub" className='about-repo-link' target='_blank'>View Source Code</motion.a>
+            <div className="about-button-container">
+                <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} href="https://github.com/coopericksen/communityhub" className='about-link' target='_blank'>View Source Code</motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} href="/assets/work_log.pdf" className='about-link' target='_blank'>View Work Log</motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} href="/assets/student_copyright_checklist.pdf" className='about-link' target='_blank'>View Copyright Checklist</motion.a>
+            </div>
 
             <div className='about-container'>
                 <h3>Tech Stack:</h3>

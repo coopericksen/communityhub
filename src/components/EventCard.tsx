@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 
-import '../styles/EventCard.css';
+import '../styles/Card.css';
 import { type Event } from '../types/types.ts';
 
 function EventCard(props: Event) {
@@ -23,7 +23,7 @@ function EventCard(props: Event) {
 
             <hr />
 
-            <h6 className='card-info-header'>Event Information</h6>
+            <h6 className='card-header'>Event Information</h6>
             <div className='card-info'>
                 {props.address != "" ? <p>Location: {props.address}</p> : null}
                 {props.time != "" ? <p>Time: {props.time}</p> : null}

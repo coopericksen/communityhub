@@ -1,6 +1,6 @@
 .card-container {
     background-color: var(--secondary);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding: 1rem;
     margin: 1rem;
 }
@@ -17,12 +17,22 @@ a {
     color: var(--white);
 }
 
-.card-info-header {
+.card-header {
     text-decoration: underline;
     margin: 1rem 0;
 }
 
 .card-info {
+    display: flex;
+    gap: 3rem;
+}
+
+.card-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-opinfo {
     display: flex;
     gap: 3rem;
 }

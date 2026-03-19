@@ -1,3 +1,5 @@
+import { motion } from 'motion/react';
+
 import Nav from '../components/Nav.tsx';
 import Footer from '../components/Footer.tsx';
 
@@ -41,7 +43,7 @@ function NewResourceForm() {
                 <label htmlFor="hours">Hours:</label>
                 <input type="text" name="hours" />
 
-                <button>Submit</button>
+                <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>Submit</motion.button>
             </form>
 
             <Footer />

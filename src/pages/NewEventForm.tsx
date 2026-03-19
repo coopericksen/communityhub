@@ -1,3 +1,5 @@
+import { motion } from 'motion/react';
+
 import Nav from '../components/Nav.tsx';
 import Footer from '../components/Footer.tsx';
 
@@ -32,7 +34,7 @@ function NewEventForm() {
                 <label htmlFor="entry_cost">Cost to Enter:</label>
                 <input type="text" name="entry_cost" />
 
-                <button>Submit</button>
+                <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>Submit</motion.button>
             </form>
 
             <Footer />

@@ -17,3 +17,11 @@ footer {
 .footer-right {
     text-align: right;
 }
+
+.footer-right a {
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}

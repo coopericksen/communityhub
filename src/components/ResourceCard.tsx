@@ -17,7 +17,7 @@ function ResourceCard(props: Resource) {
             className="card-container"
         >
             {props.image != "" ? <img className="card-image" src={props.image} alt={props.name}/>: null}
-            <h3 className='card-header'>{props.name}</h3>
+            <h3>{props.name}</h3>
 
             <p>{props.services}</p>
 
